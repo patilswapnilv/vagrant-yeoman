@@ -4,8 +4,8 @@
 Vagrant.configure("2") do |config|
 
   # Standard minimal Ubuntu box
-  config.vm.box = "precise32"
-  config.vm.box_url = "http://files.vagrantup.com/precise32.box"
+  config.vm.box = "ubuntu/trusty64"
+  config.vm.box_url = "https://github.com/kraksoft/vagrant-box-ubuntu/releases/download/14.04/ubuntu-14.04-amd64.box"
 
   # Port 9000 is where grunt server is doing serving from
   config.vm.network :forwarded_port, guest: 9000, host: 9000
